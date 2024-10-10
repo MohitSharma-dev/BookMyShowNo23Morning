@@ -18,6 +18,7 @@ public class Booking extends BaseModel{
     @ManyToMany
     private List<ShowSeat> showSeats;
     @OneToMany
+    @JoinColumn(name = "booking_id")
     private List<Payment> payments;
     @Enumerated(value = EnumType.STRING)
     private BookingStatus status;

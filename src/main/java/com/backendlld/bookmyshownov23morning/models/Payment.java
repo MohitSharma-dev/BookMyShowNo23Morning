@@ -22,3 +22,5 @@ public class Payment extends BaseModel{
     @Enumerated(EnumType.ORDINAL)
     private PaymentGateway paymentGateway;
 }
+
+// Booking 1 : M Payment
